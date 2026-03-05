@@ -58,49 +58,78 @@ programa
 		//5- Milkshake..................... R$ 3,00
 		//0 - Sair
 
-		//inteiro opcao, hamburguer = 0, cheeseburger = 0, fritas = 0, refri = 0, milkshake = 0, total
+		real opcao, hamburguer = 0.00, cheeseburger = 0.00, fritas = 0.00, refri = 0.00, milkshake = 0.00, total, quant
+		cadeia validacao
+		
 
-		//escreva("Bem-vindo à lanchonete! \nFaça seu pedido de acordo com o cardápio abaixo:")
-		//faca{
+		escreva("Bem-vindo à lanchonete! \nFaça seu pedido de acordo com o cardápio abaixo:")
+		faca{
 			
-			//escreva("\n1- Hambúrguer................. R$ 3,00\n2- Cheeseburger.............. R$ 2,50\n3- Fritas............................ R$ 2,50\n4- Refrigerante................. R$ 1,00\n5- Milkshake..................... R$ 3,00\n0 - Sair\n\n")
-			//leia(opcao)
-			//limpa()
+			escreva("\n1- Hambúrguer................. R$ 3,00\n2- Cheeseburger.............. R$ 2,50\n3- Fritas............................ R$ 2,50\n4- Refrigerante................. R$ 1,00\n5- Milkshake..................... R$ 3,00\n0 - Sair\n\n")
+			leia(opcao)
+			limpa()
 				
-			//se(opcao == 1){
-				//escreva("Adicionando um hambúguer ao seu pedido... ")
-				//hamburguer ++
-				//escreva("Hambúguer adiconado!")
-				//}
+			se(opcao == 1){
+				quant = 0.00
+				escreva("Quantos você deseja? ")
+				leia(quant)
+				escreva("Confirmar pedido(sim ou não)?")
+				leia(validacao)
+				se(validacao == "s" ou validacao == "sim" ou validacao == "Sim"){
+				escreva("Adicionando um hambúguer ao seu pedido... ")
+				hamburguer = quant
+				escreva("Hambúguer adiconado!")}
+				}
 		
-		//senao se(opcao == 2){
-				//escreva("Adicionando um cheeseburger ao seu pedido... ")
-				//cheeseburger ++
-				//escreva("Cheeseburger adiconado!")
-		//}
+		senao se(opcao == 2){
+				 quant = 0.00
+				escreva("Quantos você deseja? ")
+				leia(quant)
+				escreva("Confirmar pedido(sim ou não)?")
+				leia(validacao)
+				se(validacao == "s" ou validacao == "sim" ou validacao == "Sim"){
+				escreva("Adicionando um cheeseburger ao seu pedido... ")
+				cheeseburger = quant
+				escreva("Cheeseburger adiconado!")}
+		}
 		
-		//senao se(opcao == 3){
-				//escreva("Adicionando uma fritas ao seu pedido... ")
-				//fritas ++
-				//escreva("Fritas adiconadas!")
-		//}
-		//se(opcao == 4){
-				//escreva("Adicionando um refrigerante ao seu pedido... ")
-				//refri ++
-				//escreva("Refrigerante adiconado!")
-		//}
-		//senao se(opcao == 5){
-				//escreva("Adicionando um milkshake ao seu pedido... ")
-				//milkshake ++
-				//escreva("Milkshake adiconado!")
-		//}
-		//senao{
-				
-		//}
-		//}enquanto(opcao != 0)
+		senao se(opcao == 3){
+				 quant = 0.00
+				escreva("Quantos você deseja? ")
+				leia(quant)
+				escreva("Confirmar pedido(sim ou não)?")
+				leia(validacao)
+				se(validacao == "s" ou validacao == "sim" ou validacao == "Sim"){
+				escreva("Adicionando uma fritas ao seu pedido... ")
+				fritas = quant
+				escreva("Fritas adiconadas!")}
+		}
+		se(opcao == 4){
+				 quant = 0.00
+				escreva("Quantos você deseja? ")
+				leia(quant)
+				escreva("Confirmar pedido(sim ou não)?")
+				leia(validacao)
+				se(validacao == "s" ou validacao == "sim" ou validacao == "Sim"){
+				escreva("Adicionando um refrigerante ao seu pedido... ")
+				refri = quant
+				escreva("Refrigerante adiconado!")}
+		}
+		senao se(opcao == 5){
+				 quant = 0.00
+				escreva("Quantos você deseja? ")
+				leia(quant)
+				escreva("Confirmar pedido(sim ou não)?")
+				leia(validacao)
+				se(validacao == "s" ou validacao == "sim" ou validacao == "Sim"){
+				escreva("Adicionando um milkshake ao seu pedido... ")
+				milkshake = quant
+				escreva("Milkshake adiconado!")}
+		}
+		}enquanto(opcao != 0)
 
-		//total = (hamburguer * 3) + (cheeseburger * 2.5) + (fritas * 2.5) + (refri * 1) + (milkshake * 3) 
-		//escreva("Total do seu pedido foi: R$" + total + "\nObrigado por comprar em nossa lanchonete!")
+		total = (hamburguer * 3.00) + (cheeseburger * 2.50) + (fritas * 2.50) + (refri * 1.00) + (milkshake * 3.00) 
+		escreva("Total do seu pedido foi: R$" + total + "\nObrigado por comprar em nossa lanchonete!")
 		
 		
 		
@@ -113,7 +142,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 763; 
+ * @POSICAO-CURSOR = 2784; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
